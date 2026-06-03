@@ -1,0 +1,10 @@
+<div *ngIf="service.getProducts().length === 0">
+
+  No hay productos para mostrar
+
+</div>
+
+<app-product-card
+  *ngFor="let product of service.getProducts()"
+  [product]="product">
+</app-product-card>

@@ -1,0 +1,19 @@
+<h2>Crear Producto</h2>
+
+<input
+  type="text"
+  placeholder="Nombre"
+  [(ngModel)]="nombre">
+
+<input
+  type="number"
+  placeholder="Precio"
+  [(ngModel)]="precio">
+
+<button
+  (click)="crear()"
+  [disabled]="!nombre || precio <= 0">
+
+  Crear
+
+</button>
